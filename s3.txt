@@ -1,0 +1,42 @@
+S3 - Simple Storage Service, provides developers and IT teams with secure, durable, highly-scalable, flat object storage.
+- Object-based storage:
+--- Key
+--- Value
+--- Version ID
+--- Metadata
+--- Subresources:
+--- --- Access Control Lists
+--- --- Torrent
+- Unlimited storage
+- Files can be 0 Bytes to 5 Terrabytes
+- Files stored in buckets (basically just folders/logical separation)
+- Bucket names have to be unique globally
+- Successful upload will receive HTTP200 code
+- Read after Write consistency for PUTS of new objects
+- Eventual Consistency for overwrite PUTS and DELETES (can take some time)
+- Built for 99.99% availability
+- Amazon guarantees 99.999999999% durability (unlikely to ever lose a file)
+- Tiered storage available
+- Lifecycle management
+- Versioning
+- Encryption
+- Secure your data using Access Control Lists and Bucket Policies
+
+
+S3 Storage Tiers
+- S3 Standard:
+--- 99.99% available, 99.999999999% durable
+- S3 IA (Infrequently Accessed):
+--- Data that is accessed less often, but requires rapid access. Lower fee than S3 but charged retrieval fee.
+- S3 One Zone IA:
+--- Lower-cost option for IA but doesn't require multiple AZ resiliance
+- Glacier:
+--- Super cheap, used for archival only. Retrieval time takes 3-5 hours
+
+
+S3 Charges
+- Storage
+- Requests
+- Storage Management Pricing (tags)
+- Data Transfer Pricing (cross-region replication)
+- Transfer Accelleration - fast transfers over long distances using CloudFront

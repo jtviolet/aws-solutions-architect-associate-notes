@@ -1,0 +1,32 @@
+Solutions Architect - Associate (Understand VPC's inside and out)
+- Analytics
+- Management Tools
+- Migration
+- Compute
+- Desktop & App Streaming
+- Application Integration
+- Security & Identify & Compliance
+- Networking & Content Delivery
+- Storage
+- Databases
+
+
+Developer - Associate (Understand VPC's inside and out, watch S3/DynamoDB/Application Integration/Analytics sections after Solutions Architect - Associate)
+- Analytics
+- Management Tools
+- Compute
+- Application Integration
+- Security & Identify & Compliance
+- Networking & Content Delivery
+- Storage
+- Databases (DynamoDB needs to be known in-depth)
+
+
+SysOps Administrator - Associate (Understand VPC's inside and out, watch CloudWatch, CloudTrail)
+- Management Tools
+- Compute
+- Application Integration
+- Security & Identify & Compliance
+- Networking & Content Delivery
+- Storage
+- Databases

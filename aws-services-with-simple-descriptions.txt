@@ -1,0 +1,155 @@
+Compute
+EC2 - Elastic Compute Cloud, virtual/dedicate machines in AWS
+Lightsail - Virtual Private Server, dumb server with fixed-IP with SSH/RDP access not fully utilizing AWS services
+Elastic Container Service - Run and manage docker containers at scale
+Lambda - Code uploaded to cloud, you control when it executes (no worrying about machines underneath)
+Batch - Used for batch computing in the cloud
+Elastic Beanstalk - Developers can upload apps and AWS auto-configures
+
+
+Storage
+S3 - Simple Storage Service, object-based storage. Files are uploaded into AWS Buckets
+EFS - Elastic File System, network-attached storage (NFS)
+Glacier - Data archival, used for data that isn't accessed very often and is cheap
+Snowball - Way to bring in large amounts of data to AWS, physical snowball is sent to data center and is sent to AWS where they import for you
+Storage Gateway - Virtual Appliances, virtual machines you install in your office and data is replicated back to Amazon
+
+
+Databases
+RDS - Relational Database Service (MySQL, MSSQL, PostgreSQL, Aurora, Oracle, etc.)
+DynamoDB - Non-relational Databases (Redis, etc.)
+Elasticache - Caching commonly-queried things from database server (top 10 products, etc.)
+Red Shift - Data warehousing/business intelligence, complex queries (doing P&L analysis, time-intensive queries, etc.)
+
+
+Migration
+AWS Migration Hub - Tracking service to track application as they are migrated to AWS
+Application Discovery Service (ADS)- Automated tools that detects application type and related dependencies
+Database Migration Service (DMS) - Easy way to migrate database from on-premise to AWS
+Server Migration Service - Easy way to migrate virtual/physical servier into AWS Cloud
+Snowball - Similar to Storage, this helps to migrate large amounts of data into the cloud
+
+
+Networking & Content Delivery
+***VPC (Virtual Private Cloud) - Basically a virtual data center (configure firewalls, AZ's, address ranges, network ACL's, root tables, etc.). NEED TO UNDERSTAND THIS INSIDE AND OUT TO PASS!
+CloudFront - Content Delivery Network by Amazon, delivers media assets to users (video files, audio files, etc) by storing close to users
+***Route53 - Amazon's DNS Service
+***API Gateway - Amazon's way to create API's for services to talk to
+***Direct Connect - Amazon's way of running dedicated line from your business into AWS
+
+
+Developer Tools
+CodeStar - Project managing of code for developers
+CodeCommit - Place to store code (source control), private git repository
+CodeBuild - Compiles, tests code and build packages ready for deployment
+CodeDeploy - Deployment services that will deploy applications to EC2, Lambda, on-premise
+CodePipeline - Continuous Delivery to Model/Visualize/Automate steps for software release
+X-Ray - Used to debug/analyze serverless applications by showing traces
+Cloud9 - IDE Environment to develop code inside AWS console
+
+
+Management Tools
+CloudWatch - Monitoring service, need to know for SysOps Admin exam
+***CloudFormation - Automated way to deploy servers/services in AWS, agnosticizing aspects to make deployments faster everywhere
+***CloudTrail - Everything that happens in AWS is recorded and logged in CloudTrail and makes for easy tracking of things happening in your environment
+***Config - Monitors configuration of entire AWS environment and keeps snapshots of entire AWS environment (visualize AWS environment)
+OpsWorks - Similar to elastic beanstalk, used to automate configuration of environments (convered in  Sysops Admin test)
+Service Catalog - Way of managing a catalog of IT-approved services in AWS. Typically used for governance/compliance in big organizations
+Systems Manager - Managing AWS resources (EC2 patch maintenance, for example). Resources can be grouped by department or application
+***Trusted Advisor - Will give advice across many different disciplines. Make sure to know the difference between Trusted Advisor and Inspector
+Managed Services - Amazon will take care of EC2, auto-scaling
+
+
+Media Services
+Elastic Transcoder - 
+MediaConvert - File-based video transcoding with broadcast-grade features
+MediaLive - Broadcast-grade live video processing services (video streams)
+MediaPackage - Prepares and protects videos for delivery over the internet
+MediaStore - Place to store media (storage optimized for media)
+MediaTailor - Allows to do targeted-advertising into video streams without sacrificing broadcasting quality
+
+
+Machine Learning
+SageMaker - Makes it easy for developers to use deep learning when coding for their environments
+Comprehend - Sentiment analysis around data
+DeepLens - Artificially-aware camera (can understand what it's looking at--localized detection, not running in cloud--physical hardware)
+Lex - Powers Amazon Alexa service, artifical intelligence
+Machine Learning - Different to deep learning, entry-level. AWS will analyze data sets and predict outcomes
+Polly - Takes text and turns into speach
+Rekognition - Upload a file and it will do file analysis (upload pic of dog on beach, it will tell you "dog", "beach", etc.)
+Amazon Translate - Machine translation service, like google translate but from Amazon
+Amazon Transcribe - Used for those that are hard of hearing--takes audio and creates text
+
+
+Analytics
+Athena - Run SQL queries against items in S3 buckets (serverless)
+***EMR - Elastic Map Reduce, used for processing large amounts of data
+CloudSearch - Search service for AWS
+ElasticSearch Service - Elastic Search service for AWS
+***Kinesis - Way of ingesting large amounts of data into AWS (i.e. social media feeds for specific hashtag)
+Kinesis Video Streams - Allows you to ingest large amounts of data on people streaming your media
+QuickSight - BI tool, significantly cheaper than competitors
+***Data Pipeline - Way of moving data between different AWS services
+Glue - Used for ETL (extract, transform, load), glue is optimized to achieve this
+
+
+Security & Identity & Compliance
+***IAM - Identity Access Management
+Cognito - Way of doing device authentication (2-factor auth)
+GuardDuty - Monitors for malicious activity on AWS account
+***Inspector - Agent installed on EC2 instances, run tests against it to check for vulnerabilities--these can be scheduled
+Macie - Scan S3 buckets for any personally identifiable information (PII) and alert you
+***Certificate Manager - SSL certificates for free if registered through Route53
+***CloudHSM - Cloud Hardware Security Module, Dedicated hardware used to store your private/public keys or other keys, can also use keys to encrypt objects on AWS
+***Directory Service - Incorporate Microsoft Active Directory with AWS
+***WAF - Web Application Firewall (7-layer firewall), monitoring application layer
+***Shield - DDoS Mitigation
+Artifact - Used for audit and compliance, download audit and compliance reports
+
+
+Mobile Services
+Mobile Hub - Management console for mobile services
+Pinpoint - Targeted push notifications for increased mobile engagement
+AWS AppSync - Automatically updates data in web/mobile applications and will update offline users when they reconnect
+Device Farm - Testing apps on real, live devices
+Mobile Analytics - Analytics service for mobile devices
+
+
+AR/VR
+Sumerian - Used for AR/VR 3D app design
+
+
+Application Integrations
+Step Functions - Way to manage lambda functions and steps to go through it
+Amazon MQ - Message queues (like RabbitMQ)
+SNS - Notification service when triggers are hit
+SQS - Way to decouple intrastructure, take messages in, and allow EC2 instances to poll data
+SWF - Create a workflow to be modeled after a process that you have
+
+
+Customer Engagement
+Amazon Connect - Contact Center as a Service (CCaaS)
+***Simple Email Service - Easy way to send large amounts of emails
+
+
+Business Productivity
+Alexa For Business - use to dial into rooms, inform IT of problem--Alexa in the workplace
+Amazon Chime - Video conferencing by Amazon
+***Work Docs - Like Dropbox for AWS
+WorkMail - Like O365/Gmail for Amazon
+
+
+Desktop & App Streaming
+Workspaces - VDI (Virdual Desktop) that can be accessed in the cloud
+AppStream 2.0 - Stream application live to device (like Citrix)
+
+
+Internet of Things
+iOT - Can have devices sending back information
+iOT Device Management - Used to manage AWS iOT devices
+Amazon FreeRTOS - Realtime OS by Amazon
+Greengrass - Software to run local compute services in a secure way
+
+
+Game Development
+GameLift - Service to help develop game services in AWS

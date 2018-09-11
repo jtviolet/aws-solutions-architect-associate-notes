@@ -1,0 +1,26 @@
+Exam Blue Print
+- I will be taking new 2018 exam (old exam retired in July 2018)
+
+
+10,000-foot Overview
+----------------------
+
+AWS Global Infrastructure
+*You will never be tested on numbers (e.g. number of regions/availability zones)*
+
+Region - Geographical area; Each reach consists of two or more availability zones (AZ)
+Availability Zone - Data Center. In a region, but far enough apart to survive natural disasters but within the same region. Places resources in multiple AZ's in the event of a disaster.
+
+North America Regions:
+- US East (Northern Virginia)
+- US East (Ohio) Region
+- US West (Oregon) Region
+- US West (Northern California) Region
+- AWS GovCloud (US-West Region)
+- Canada (Central)
+
+Edge Locations - Endpoints for AWS used for caching content (e.g. Cloudfront). There are many more Edge Locations than Regions.
+
+:::Notes before the exam:::
+- I need to understand the difference between Region, Availability Zone, and Edge Location.
+- Read S3 FAQ

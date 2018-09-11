@@ -1,0 +1,16 @@
+Identity Access Management (IAM) - Allows you to manage users and their level of access to the AWS Console.
+- Centralized control of AWS account
+- Shared access to AWS account
+- Granular permissions
+- Identify Federation (AD, FB, LinkedIn, etc.)
+- Multifactor Authentication
+- Provide temporary access for users/devices/services
+- Allows you to setup password rotation policy
+- Integrates with many services
+- Supports PCI DSS Compliance
+
+Critical Terms
+Users - End users
+Groups - Collection of users under one set of permissions (Admins, HR, etc.)
+Roles - Create roles and assign them to AWS resources (i.e. giving EC2 instance role for writing to EC2)
+Policies - Document that defines one or more permissions. Apply policies to users, groups, and roles
