@@ -83,3 +83,102 @@ S3 Security & Encryption
 
 S3 Transfer Accelleration
 - Uses CloudFront Edge Network to accelerate yoru uploads to S3
+
+S3 Static Website Hosting
+- [bucketname].s3-website-[region].amazonaws.com
+
+
+
+S3 Exam Tips
+- S3 is object-based
+- Files can be 0B to 5TB
+- Unlimited storage
+- Files are stored in Buckets
+- Universal namespace, names must be unique
+- Read after Write consistency for PUTS of new objects
+--- Immediately able to read object
+- Eventual Consistency for overwrite PUTS and DELETES (take time to propogate)
+--- If you update object and then try to read you may get the old object
+- Writing to S3 returns HTTP200 for successful write
+- Loading files is faster when multipart upload is enabled
+
+- Storage Tiers
+--- S3 Standard
+--- --- 99.99 available, 99.999999999 durable, designed to sustain loss of 2 facilities concurrently
+--- S3 IA (Infrequently Accessed)
+--- --- Accessed less frequently, requires rapid access when needed. Lower fee than S3 but charged for retrieval.
+--- S3 One Zone IA
+--- --- Want lower-cost for infrequent data but doesn't require multiple AZ resiliency
+--- Glacier
+--- --- Cheap, used for archival only. 3-5 hour retrieval time
+
+- Core Fundamentals of S3:
+--- Key
+--- Value
+--- Version ID
+--- Metadata
+--- Access Control Lists
+
+- Versioning
+---  Objected based storage (files only, not OS or db)
+---  All versionf of object are stored, writes and deletes
+---  Once enabled, versioning cannot be disabled
+---  Integrates with Lifecycle rules
+---  Versioning's MFA Delete capability can be used to provide additional layer of security
+---  Cross Region Replication, requires versioning on source and destination buckets
+
+- Lifecycle Management
+--- Can be used in conjunction with versioning
+--- Can be applied to current/previous versions
+--- Actions that can be done:
+--- --- Transition to Standard S3 IA after 30 days
+--- --- Archive to Glacier after 30 days
+--- --- Permanently Delete
+
+- CloudFront
+--- Edge Location - location where content will be cached
+--- Origin - Origin of all files that CDN will distribute
+--- Distribution - name given to CDN which consists of collection of Edge Locations
+--- --- Web Distribution - typically used for websites
+--- --- RTMP Distributions - media streaming/flash files
+--- Edge locations are not just read only, you can write to them too
+--- Objects are cached for life of TTL (default 24 hours)
+
+- Securing Buckets
+--- Newly created buckets are private by default
+--- You can setup access control using:
+--- --- Bucket Policies
+--- --- Access Control Lists
+--- Buckets can be configured to create access logs
+
+- Encryption
+--- In Transit
+--- --- SSL/TLS
+--- At Rest
+--- --- Server Side Encryption
+--- --- --- S3 Manged Keys SSE-S3
+--- --- --- AWS Key Management Service, Manged Keys SSE-KMS
+--- --- --- Server Side Encryption with Customer Provided Keys SSE-C
+- Storage Gateways
+--- File Gateway - flat files, directly on S3
+--- Volume Gateway
+--- --- Stored Volumes - Entire dataset stored on site, async backed up to S3
+--- --- Cached Volumes - Entire dataset stored in S3, most recent data stored onsite
+--- Gateway Virtual Tape Library (VTL) - Used for backup and uses popular backup applications like NetBackup, Backup Exec, Veeam, etc.
+
+- Snowball
+--- Import to S3 or Export from S3
+--- Snowball
+--- --- 80TB, no compute
+--- Snowball Edge
+--- --- 100TB, has compute
+--- Snowmobile
+--- --- 100PB, semi-truck
+
+- S3 Transferion Accelleration
+--- Speed up transfers to S3 using S3 transfer acceleration. Costs extra, great impact for people in distant locations.
+
+- S3 Static websites
+- Serverless
+- Cheap, scales automatically
+- Static only, no compute
