@@ -1,0 +1,15 @@
+DynamoDB
+- NoSQL database for consistent, single-digit milisecond latency at any scale
+- Stored on SSD storage
+- Spread across 3 geographically distinct data centers
+- Eventually Consistent Reads
+  - Consistency across all copies of data is uaully reached within a second. Repeating read after short time will return updated data (best read performance)
+- Strongly Consistent Reads
+  - Returns a result that reflects all writes that received a successful response prior to the read
+
+DynamoDB Pricing
+- Provisioned Throughput Capacity
+  - Write Throughput $0.0065 per hour for every 10 units
+  - Read Throughput $0.0065 per hour for every 50 units
+- Storage Costs
+  - $0.25GB/month
