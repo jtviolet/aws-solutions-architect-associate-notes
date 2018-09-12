@@ -1,0 +1,14 @@
+Snowball - Petabyte-scale data transport solution that uses secure appliances to transfer large amounts of data into and out of AWS. Addresses challenges with large-scale data transfers including high network costs, long transfer times, and security concerns.
+- Storage only, up to 80TB
+Snowball Edge - Snowball but with onboard compute functionality
+- Storage up to 100TB
+Snowmobile - Snowball for petabyte/exobyte amounts of data
+- Storage up to 100PB
+
+
+Exam Notes
+- Understand what Snowball is
+- Understand what Import Export is (old name for Snowball)
+- Snowball can:
+--- import to S3
+--- export from S3
