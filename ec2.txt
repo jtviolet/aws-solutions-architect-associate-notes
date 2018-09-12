@@ -166,3 +166,6 @@ Know Placement Groups (assume clustered is implied, if not mentioned)
 --- Always in one AZ, used for Big Data (low latency, high throughput)
 - Spread Placement Groups
 --- Important EC2 instance on separate hardware
+
+KNOW Elastic Container Service (ECS)
+******************
