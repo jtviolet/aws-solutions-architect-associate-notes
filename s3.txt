@@ -64,5 +64,3 @@ S3 Lifecycle Management
 - Transition to IA after 30 days is possible
 - Archive to Glacier after 30 days is possible
 - Can permanently delete after N days
-
-
