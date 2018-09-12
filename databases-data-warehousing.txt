@@ -1,0 +1,20 @@
+Redshift
+- Single Node (160GB)
+- Multi-Node
+  - Leader Node, manages client connections and receives queries
+  - Compute Node, store data and perform queries and computations
+    - Up to 128 Compute Nodes
+- Columnar Data Storage
+- Massively Parallel Processing (MPP) - Automatic distribution of data and query loads across all Nodes
+- Currently only available in one AZ
+- Can restore snapshots to new AZ in event of outage
+
+Costs
+- Computer Node Hours
+- Backup
+- Data Transfer (within a VPC, not outside of)
+
+Encryption
+- Encrypted in transit using SSL
+- Encrypted at rest using AES-256
+- Redshift takes care of key management
