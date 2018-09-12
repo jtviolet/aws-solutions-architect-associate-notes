@@ -1,0 +1,11 @@
+EBS Vs Instance Store
+- All AMI's are categorized as either backed by Amazon EBS or backed by instance Store
+- EBS Volumes:
+--- The root devbice for an instance launched from the AMI is an Amazon EBS volume created from an Amazon EBS snapshot
+- Instance Store Volumes:
+--- The root device for an instance launched from the AMI is an instance store volume cretaed from a template stored in Amazon S3
+--- Sometimes called Ephemeral Storage
+--- If host fails, you lose your data
+- Only EBS backed instances can be stopped
+- Both instances types can be rebooted
+- By default, ROOT volumes will be deleted on termination, but with EBS volumes you can tell AWS to keep the root device volume
