@@ -42,9 +42,17 @@ S3 Charges
 - Transfer Accelleration - fast transfers over long distances using CloudFront
 
 
-SE Versioning
+S3 Versioning
 - Stores all versions of an object (even if you delete an object)
 - Once enabled, versioning cannot be disabled, only suspended
 - Integrates with Lifecycle rules
 - Versioning's MFA Delete capability, which uses MFA, can be used to provide additional layer of security
 
+
+S3 Cross Region Replication
+- Versioning must be enabled on both the source and destination buckets
+- Regions must be unique
+- Files in an existing bucket are not replicated automatically, all new and updated files will be replicated automatically
+- You cannot replicate multiple buckets or daisy chain replication
+- Delete markers are replicated
+- Deleted individual versions or markers will not be replicated
