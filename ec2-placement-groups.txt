@@ -1,0 +1,14 @@
+Placement Groups:
+- Only certain types of instances can be launched in placement group (compute, GPU, Memory, Storage)
+- AWS recommends homogenous instances
+- Can't merge placement Groups
+- Can't move existing instance into a palcement group
+- Can create AMI from instance and launch that into placement group
+
+Clustered Placement Group:
+- Grouping of instances within a single AZ. Recommended for applications that need low network latency, high network throughput, or both
+- Can't spread multiple AZ
+
+Spread Placement Group:
+- Group of instances that are each placed on distinct underlying hardware. Recommended for applications that have small number of critical instances that should be kept separte from each other
+- Can spread over multiple AZ

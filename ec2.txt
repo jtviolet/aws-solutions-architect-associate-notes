@@ -68,6 +68,9 @@ EBS Volume Types
 --- start dev here and move up when you're ready
 
 
+Instance Metadata
+- http://169.254.169.254/latest/meta-data/
+
 
 Exam Tips
 - Know On Demand
