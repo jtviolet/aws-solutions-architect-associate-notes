@@ -1,0 +1,33 @@
+AWS Database Types
+RDS - OTLP (Online Transaction Processing)
+  - SQL Server
+  - Oracle
+  - MySQL
+  - PostgreSQL
+  - Amazon Aurora
+  - MariaDB
+- DynamoDB
+- RedShift OLAP (Online Analytics Processing, Datawarehousing)
+- Elasticache
+
+ Non-Relational Database Structure
+ - Database
+   - Collection (table)
+     - Document (row)
+       - Key/Value Pairs (fields)
+
+Data Warehousing
+- Used for Business Intelligence (Cognos, Jaspersoft, etc.)
+- OLTP Vs. OLAP
+--- OLTP (Online Transaction Processing)
+--- --- Order number 2120121
+--- --- Pulls up a row of data (name, date, address, status)
+--- OLAP (Online Analytics Processing, used for Datawarehousing)
+--- --- Pull in large number of records
+--- --- Uses different type of architecture for database and infrastructure
+
+Elasticache
+- Web service that makes it easy to deploy, operate, and scale in-memory cache in the cloud
+- Types
+  - Memcached
+  - Redis
