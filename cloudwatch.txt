@@ -1,0 +1,3 @@
+Exam Notes
+- Standard Monitoring = 5 minutes
+- Detailed Monitoring = 1 Minute
