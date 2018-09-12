@@ -56,3 +56,13 @@ S3 Cross Region Replication
 - You cannot replicate multiple buckets or daisy chain replication
 - Delete markers are replicated
 - Deleted individual versions or markers will not be replicated
+
+
+S3 Lifecycle Management
+- Can be used with versioning
+- Can be applied to current and previous versions
+- Transition to IA after 30 days is possible
+- Archive to Glacier after 30 days is possible
+- Can permanently delete after N days
+
+
