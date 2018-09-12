@@ -79,3 +79,7 @@ S3 Security & Encryption
 --- --- --- AWS Key Management Service, Manged Keys SSE-KMS
 --- --- --- Server Side Encryption with Customer Provided Keys SSE-C
 --- --- Client Side Encryption
+
+
+S3 Transfer Accelleration
+- Uses CloudFront Edge Network to accelerate yoru uploads to S3
