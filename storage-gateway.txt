@@ -1,0 +1,28 @@
+Storage Gateway - Service that connects an on-premise software appliance with cloud-based storage to provide seamless and secure integration between an organizations IT environment and AWS storage infrastructure.
+
+Types of Storage Gateways
+- File Gateway (NFS)
+- Volumes Gateway (iSCSI)
+--- Stored Volumes
+--- Cached Volumes
+- Tape Gateway (VTL)
+
+File Gateway - Files are stored as objects in your S3 buckets, accessed through NFS mount point. Once files are transferred they can be managed as native S3 objects.
+Volume gateway - Presents your applications with disk volumes using iSCSI block protocol.
+--- Can be asynchronously backed up as point-in-time snapshots of your volumes
+--- Stored in cloud as EBS snapshots
+--- Stored Volumes
+--- --- Store entire copy locally, asynchronouslybackup to AWS. Complete copy of data kept on-site.
+--- Cached Volumnes
+--- --- S3 is primary data storage and store only most recent copy locally. Don't need large storage arrays locally.
+Tape Gateway - Durabled, cost-effective solution to use existing tape-based backup solution, virtual tapes are sent to and stored in S3.
+
+
+
+Exam Study Notes
+File Gateway - for flat files, stored directly on S3
+Volume Gateway:
+- Stored Volumes - Entire dataset stored onsite and async backed up to S3
+- Cached Volumes - Entire dataset stored in S3 and most recent data cached onsite
+Gateway Virtual tape Library (VTL):
+- Used for backup and uses popular backup applications like NetBackup, Backup Exec, Veeam, etc.
