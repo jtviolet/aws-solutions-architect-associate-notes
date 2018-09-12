@@ -1,0 +1,17 @@
+Aurora
+- MySQL-compatible
+- combines speed and availability of high-end commercial databases
+- has simplicity an dcost-effectiveness of open source databases
+- five times better performance than MySQL at 1/10th price of commercial databases
+- storage starts with 10GB, scales in 10GB increments up to 64TB
+- compute scales up to 32 vCPU's and 244GB memory
+- 2 copies of data in each AZ, minimum of 3 AZ's
+- designed to transparently handle loss of 2 copies without affecting DB write availabilty
+- designed to transparently handle loss of 3 copies without affecting read availability
+- self-healing; data blocks/disks are continuously scanned for errors and repaired automatically
+
+Aurora Replica Features
+- Aurora Replicas
+  - 15
+MySQL Read Replicas
+  - 5
