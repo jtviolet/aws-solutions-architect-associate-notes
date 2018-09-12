@@ -1,0 +1,7 @@
+Content Delivery Network (CDN)
+- Edge Location - Location where content will be cached; separate to an AWS Region/AZ
+- Origin - Origin of all the files that the CDN will distribute. This can be an S3 Bucket, EC2 Instance, Elastic Load Balancer, or Route53, or not with AWS
+- Web Distribution - Typically used for websites
+- RTMP - Used for media streaming (adobe flash)
+- Edge Locations are not just read only, you can write to them, too
+- Objectes are cached for life of TTL
