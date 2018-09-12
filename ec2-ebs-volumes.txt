@@ -1,0 +1,18 @@
+Volumes & Snapshots
+- Volumes exist on EBS
+--- Virtual Hard Disk
+- Snapshots exist on S3
+- Snapshots are point in time copies of Volumes
+- Snapshots are incremental - only blocks that have changed since your lat snapshot are saved
+
+Snapshots of Root Device Volumes
+- Can create AMI's from Volumes and Snapshots
+- Can change volume sizes on the fly, including size and storage type
+- Always in the same AZ as the EC2 instance
+- To move EC2 volume from one AZ/Reg to another, take snap or image of it, copy it to new AZ Region, then create EC2 instance
+
+Voumes Vs Snapshots - Security
+- Snaps of encrypted volumes are encrypted automatically
+- VOlumes restored from encrypted snaps are encrypted automatically
+- You can share snapshots only if they are unencrypted
+--- Snaps can be shared with other AWS accounts or made public
