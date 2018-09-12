@@ -1,0 +1,77 @@
+EC2 - web service that provides resizable compute capacity in the cloud
+
+On Demand
+- for users that want low cost and flexibility
+- applications with short term, spiky, unpredictable workloads
+- initial testing on EC2
+
+Reserved Instances
+- apps with steady or predictable usage
+- applications that require reserved capacity
+- users can make up-front payments to reduce total cost
+- Standard Reserved Instance
+--- up to 75% off on-demand cost
+- Convertible Reserved Instance
+--- up to 54% off on-demand cost
+--- capability to change attributes of Reserved Instance as long as exchange results in creation of Reserved Instances of equal or greater value
+- Scheduled Reserved Instance
+--- available to launch within time window you reserved
+--- allows you to match capacity reservation to a predictable, recurring schedule
+
+Spot Instances
+- flexible start and end times
+- only feasible at very low compute prices
+- users with urgent need for large amounts of additional computing capacity
+
+Dedicated Hosts
+- useful for regulatory requirements that may not support multi-tenant virtualization
+- useful for licensing that doesn't support cloud deployments
+- can be purchased on-demand
+- can be purchased as reservation for up to 70% off on-demand price
+
+Instance Types
+F - FPGA (Field Programmable Gate Array)
+I - IOPS
+G - Graphics
+H - High Disk Throughput
+T - cheap general purpose (think T2 micro)
+D - Density
+R - RAM
+M - Main choice for general purpose apps
+C - Compute
+P - Graphics (think Pics)
+X - Extreme Memory
+
+EBS - Elastic Block Storage
+- Attach block storage to EC2 isntances
+- placed in a specific AZ, automatically replicated to protect you from single-component failure
+- if windows/linux installed on disk, it's called the "root device volume"
+
+EBS Volume Types
+- General Purpose SSD (GP2)
+--- General purpose, price/performance balance
+--- 3 IOPS/GB up to 10,000 IOPS and bursts up to 3,000 IOPS for extended periods for volumes 3334GB+
+- Provisioned IOPS SDD (IO1)
+--- Designed for IO intensive applications or NoSQL databases
+--- Used when needing more than 10,000 IOPS
+--- Can provision up to 20,000 IOPS/Volume
+- Throughput Optimized HDD (ST1)
+--- Big Data
+--- Data warehouses
+--- Log processing
+--- Cannot be boot volume
+- Cold HDD (SC1)
+--- Lowest cost storage, infrequently accessed
+--- Typically a file server
+- Magnetic (Standard)
+--- Lowest cost per gigabyte of all volume times that are bootable
+--- start dev here and move up when you're ready
+
+
+
+Exam Tips
+- Know On Demand
+- Know Reserved
+- Know Spot
+--- won't be charged if AWS terminates instance, but you will be charged if you terminate it
+- Know Dedicated Hosts
