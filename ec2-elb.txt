@@ -15,3 +15,18 @@ Classic Load Balancers
 - can use strict layer 4 load balancing
 - if application stops responding, ELB responds with 504
 - X-Forwarded-For header can pass on users public IP address
+
+
+
+Exam Tips
+- 3 types of Load Balancers
+--- Application Load Balancers (layer 7)
+--- Network Load Balancers (layer 4)
+--- Classic Load Balancers (layer 7 and layer 4)
+- 504 means the gateway has timed out. This means the application not responding within the idle timeout period.
+--- Troubleshoot. Is it the web server or the database server?
+- If you need IPv4 address of end user, look for the X-Forwarded-For header
+- Instances monitored by ELB are reported as InService or OutofService
+- Healthcecks instance by talking to it
+- ELB'as have their own DNS name
+- Read FAQ
