@@ -31,3 +31,62 @@ Elasticache
 - Types
   - Memcached
   - Redis
+
+
+
+Summary
+Database Types
+  - RDS (OLTP)
+    - SQL
+    - MySQL
+    - PostgreSQL
+    - Oracle
+    - Aurora
+    - MariaDB
+  - DynamoDB (NoSQL)
+  - RedShift (OLAP)
+  - Elasticache (in-memory)
+    - Memcached
+    - Redis
+
+Multi-AZ
+- Used for DR
+- Not used for performance gains
+
+Read Replicas
+- Used for scaling, performance gains
+- You can have up to five Read Replicas
+
+Aurora scaling
+- 2 copies of data in each AZ, 3 AZ's minimunm (total of 6 copies)
+- Designed to handle losses transparently
+- Self-healing storage
+
+Aurora Replicas
+- Up to 15 Replicas
+
+MySQL Replicas
+- Up to 5 Replicas
+
+DynamoDB vs RDS
+- DynamoDB offers "push button" scaling
+- RDS requires bigger instance size or to add Read Replica
+
+DynamoDB
+- stored on SSD storage
+- spread across 3 geographically distinc data centers
+- Types
+  - eventually consistent reads (default)
+  - strongly consistent reads
+
+Redshift Configuration
+- Single Node (160GB)
+- Multi-Node
+  - Leader Node (manages client connections)
+  - Compute Node (stores data, performs queries, up to 128 nodes)
+
+Elasticache
+- Memcached
+  - Multi-AZ NOT available
+- Redis
+  - Multi-AZ available
