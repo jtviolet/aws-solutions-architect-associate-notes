@@ -5,8 +5,8 @@ Routing Policies:
 --- allows you to split your traffic based on different weights assigned
 - Latency
 --- allows you to route your traffic based on the lowest latency for your end user (region with fastest response time)
-
 - Failover
+--- used when you want to create an active/passive setup (e.g. use primary site in US-EAST-1 and secondary DR Site in US-WEST-1).
 - Geolocation
 
 
@@ -17,3 +17,7 @@ Routing Policies:
 
 Exam Notes:
 - You can only resolve an ELB by going to it's DNS name
+- ELB never has IPv4 address, only DNS names
+- Understand difference between Alias Record and CName Record
+- Given the choice, always choose Alias Record over a CName Record
+- Understand routing policies and their use cases
