@@ -1,0 +1,10 @@
+Exam Tips
+- Lambda scales out (not up) automatically
+- Lambda functions are independent
+- Lambda is serverless
+- Know which AWS services are serverless
+- Lambda functions can trigger other lambda functions
+- Architecture can get complicated, AWS X-ray helps to debug
+- Lambda cna do things globally
+- Know your triggers
+--- API Gateway, Alex Skills Kit, S3, DynamoDB, etc.
