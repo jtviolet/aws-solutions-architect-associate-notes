@@ -1,0 +1,10 @@
+Exam Notes
+- Security Group updates are applied immediately
+- Security Groups are stateful (adding inbound rule automatically adds outbound rule)
+- All inbound traffic is blocked by default
+- All outbound traffic is allowed
+- Any number of EC2 instances within a security Group
+- You can have multiple security groups attached to an instances
+- Security Groups are STATEFUL and Network Access Control Lists are STATELESS
+- Cannot block specific IP addresses using Security Groups
+- You can specify allow rules but not deny rules

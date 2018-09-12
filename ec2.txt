@@ -75,3 +75,8 @@ Exam Tips
 - Know Spot
 --- won't be charged if AWS terminates instance, but you will be charged if you terminate it
 - Know Dedicated Hosts
+- Termination Protection is turned off by default, you must turn it on
+- On EBS-backed instance, default action is for the root EBS volume to be deleted when the instance is terminated
+- EBS Root volumes of your DEFAULT AMI's cannot be encrypted (but third party tools can be used to encrypt)
+- EBS Volumes can also be copied and then encrypted at that time
+- Additional volumes can be encrypted
