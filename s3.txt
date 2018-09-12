@@ -64,3 +64,18 @@ S3 Lifecycle Management
 - Transition to IA after 30 days is possible
 - Archive to Glacier after 30 days is possible
 - Can permanently delete after N days
+
+
+S3 Security & Encryption
+- All newly created buckets are private by default
+- You can setup access control for buckets using bucket policies and ACL
+- Buckets can be configured to create access logs which log requests made to the bucket.
+- Methods of Encryption
+--- In Transit
+--- --- SSL/TLS
+--- At Rest
+--- --- Server Side
+--- --- --- S3 Manged Keys SSE-S3
+--- --- --- AWS Key Management Service, Manged Keys SSE-KMS
+--- --- --- Server Side Encryption with Customer Provided Keys SSE-C
+--- --- Client Side Encryption
