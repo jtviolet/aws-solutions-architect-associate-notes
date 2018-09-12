@@ -1,0 +1,10 @@
+ElastiCache
+- Memcached
+  - No Multi-AZ support
+- Redis
+  - Multi-AZ support
+
+Exam Tips
+When asked which service to use to alleviate stress/load on database:
+- Elasticache is good choice if database is read heavy and not prone to frequent changing
+- Redshift is good if reason database is stressed is because management keeps running OLAP transactions on it
