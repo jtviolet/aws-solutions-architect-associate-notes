@@ -1,0 +1,19 @@
+Routing Policies:
+- Simple
+--- default routing policy when you create a new record set. Most commonly used when you have a single resource that performs a given function for your domain (e.g. one web server that serves content for violetfamily.com)
+- Weighted
+--- allows you to split your traffic based on different weights assigned
+- Latency
+--- allows you to route your traffic based on the lowest latency for your end user (region with fastest response time)
+
+- Failover
+- Geolocation
+
+
+
+
+
+
+
+Exam Notes:
+- You can only resolve an ELB by going to it's DNS name

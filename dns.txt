@@ -1,0 +1,29 @@
+SOA record stores:
+- name of server that supplied data for the zone
+- admin of the zone
+- current version of the data file
+- number of seconds a secondary name server should wait before checking for updates
+- number of seconds a secondary name server should wait before retrying a failed zone transfer
+- maximum number of seconds a secondary name server can use data before it must refresh or expire
+- default number of seconds for the time-to-live (TTL) file on resource records
+
+NS Records (Name Server Record)
+- used by top level domain server to direct traffic to the Content DNS server which contains authoritative DNS records
+
+A Records (Address Record)
+- used to translate domain name to IP address
+
+TTL Record (Time-To-Live Record)
+- The Length that a record is cached on either the Resolving SErver or the users local PC
+
+CName Record (Canonical Name Record)
+- can be used to resolve one domain name to another (jordanviolet.com points to violetfamily.com)
+
+Alias Record
+- works like CName record in that you can map one DNS name to another
+- CName can't be used for naked domain names, can't have CName for violetfamily.com, it must be either A Record or Alias
+
+Exam Tips
+- ELB do not have pre-defined IPv4 addresses, must resolve using DNS name
+- Understand the difference between Alias Record and CName Record
+- Given the choice, always choose an Alias Record over CName
