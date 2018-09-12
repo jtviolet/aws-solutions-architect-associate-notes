@@ -1,0 +1,7 @@
+Elastic File System (EFS) - file storage service for EC2 instances.
+- Supports NFSv4
+- only pay for storage used
+- can scale up to petabytes
+- supports thousands of concurrent NFS connections
+- data is stored across multiple AZ's within a region
+- read after write consistency
