@@ -1,0 +1,17 @@
+Application Load Balancers
+- best suited for load balancing http and https traffic
+- operate at layer 7
+- application-aware
+
+Network Load Balancers
+- best suited for load balancing TCP traffic
+- operate at layer 4
+- can handle millions of requests per second with low latency
+
+Classic Load Balancers
+- legacy Elastic Load Balancer
+- load balance HTTP/https
+- operates at layer 7
+- can use strict layer 4 load balancing
+- if application stops responding, ELB responds with 504
+- X-Forwarded-For header can pass on users public IP address
