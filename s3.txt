@@ -40,3 +40,11 @@ S3 Charges
 - Storage Management Pricing (tags)
 - Data Transfer Pricing (cross-region replication)
 - Transfer Accelleration - fast transfers over long distances using CloudFront
+
+
+SE Versioning
+- Stores all versions of an object (even if you delete an object)
+- Once enabled, versioning cannot be disabled, only suspended
+- Integrates with Lifecycle rules
+- Versioning's MFA Delete capability, which uses MFA, can be used to provide additional layer of security
+
