@@ -1,0 +1,43 @@
+Automated Backups
+- Allow you to recover database to any point in time within retention period (1-35 days)
+- Take full, daily snapshot
+- Store transaction logs
+- Enabled by default
+- Stored in S3, free equal to size of database
+- Deleted when RDS instance is deleted
+
+Snapshots
+- Database snapshots are done manually (stored even after RDS instance is deleted)
+
+
+Restoring Backups
+- When using either restore option, restored version of database will be a new RDS instance with new DNS endpoint
+
+
+Encryption
+- Done using AWS Key Management Service (KMS)
+- Encrypting existing RDS is not currently supported
+
+
+Multi-AZ RDS
+- Used for Disaster Recover (DR) only
+- Availability
+  - SQL Server
+  - Oracle
+  - MySQL Server
+  - PostgreSQL
+  - MariaDB
+
+
+Read Replicas
+- Used for scaling, not DR
+- Must have automatic backups turned on to deploy a Read Replicas
+- You hcan have up to 5 Read Replicas of any database
+- Allow you to have a read-only copy of your database
+- Achieved using asynchronous replication
+- Used for performance improvements, read-heavy database workloads
+- Each read replica will have its own DNS end point
+- You can have read replicas that have Multi-AZ
+- You can create read replicas of Multi-AZ source databases
+- Read Replicas can be promoted to be their own databases (breaks replication)
+- You can have a read replica in another Region
