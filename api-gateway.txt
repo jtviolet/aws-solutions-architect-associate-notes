@@ -1,0 +1,14 @@
+API Gateway
+- caches responses from endpoint for set period of time (TTL)
+- low cost, efficient
+- scales effortlessly
+- throttle requests to prevent attacks
+- connect to CloudWatch to log requests
+
+Cross-Origin Resource Sharing (CORS)
+- server on other end can relax same-origin policy
+- mechanism that allows restricted resources on web apge to be from another domain
+
+
+Exam Tips
+^^^ See above
