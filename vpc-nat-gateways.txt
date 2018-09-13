@@ -1,0 +1,9 @@
+NAT gateways
+- Preferred by the enterprise
+- Scale automatically up to 10Gbps
+- No need to patch
+- Not associated with security groups
+- Automatically assigned a public ip address
+- Remember to update route tables and point to NAT Gateways
+- No need to disable source/destination checks
+- More secure than a NAT instance
