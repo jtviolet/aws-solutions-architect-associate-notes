@@ -1,0 +1,4 @@
+SQS
+- gives access to message queues
+- waits for computer to process messages
+
