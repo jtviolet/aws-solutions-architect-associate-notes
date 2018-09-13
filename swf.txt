@@ -1,0 +1,20 @@
+SWF
+- Task is assigned only once and is never duplicated
+- assigns tasks and monitors progress
+- workers/deciders don't track execution state, run independently, and scale quickly
+- parameters described in JSON
+- maximum workflow is 1 year, always measured in seconds
+
+SWF Workers
+- program that interacts with SWF
+- gets task
+- process receives tasks
+- returns result
+
+SWF Decider
+- program that controls coordination of tasks
+- task ordering, concurrency, scheduling according to application logic
+
+SWF Domains
+- workflow, activity types, workflow execution all scoped to a Domain
+- Domains isolate set of types, executions, and task lists from others in same account
