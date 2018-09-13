@@ -1,0 +1,14 @@
+SNS
+- web services, easy setup, send notifications from the cloud
+- pub/sub
+- can send SMS and Email
+- messages stored redundantly across multiple AZs
+- group multiple recipients using Topics
+- Benefits
+  - instant, push-based delivery
+  - simple API, easy integration
+  - flexible delivery over multiple transport protocols
+
+  SNS Vs SQS
+  - SNS is push
+  - SQS is poll
