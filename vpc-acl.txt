@@ -1,0 +1,13 @@
+Network ACL
+- operates at the subnet level
+- supports allow rules and deny rules
+- stateless
+- process rules in number order when deciding whether to allow traffic
+- automatically applies to all instances in the subnets it's associated with
+
+Security Group
+- operates at the instance level
+- supports allow rules only
+- stateful
+- evaluate all rules before deciding whether to allow traffic
+- applies to an instance only
