@@ -1,0 +1,3 @@
+Exam Tips
+- NAT is used to provide internet traffic to EC2 instances in private subnets
+- Bastion is used to securely administer EC2 in private subnets (jump box)
