@@ -30,22 +30,35 @@ Exam Tips
 - 1 subnet = 1 AZ
 - Security Groups are stateful; NACL's are Stateless
 - NO TRANSITIVE PEERING
-NAT Instances
-- When creating a NAT instance, disable source/destination check on the instance
-- NAT instances must be in a public subnet
-- There must be a route out of the private subnet to the NAT instance for this to work
-- The amount of traffic that NAT instances can support depends on the instance size
-- You can create HA using:
-  - Autoscaling Groups
-  - Multiple subnets in different AZs
-  - Script to automate failover
-- Behind Security groups
-NAT gateways
-- Preferred by the enterprise
-- Scale automatically up to 10Gbps
-- No need to patch
-- Not associated with security groups
-- Automatically assigned a public ip address
-- Remember to update route tables and point to NAT Gateways
-- No need to disable source/destination checks
-- More secure than a NAT instance
+
+- NAT Instances
+  - When creating a NAT instance, disable source/destination check on the instance
+  - NAT instances must be in a public subnet
+  - There must be a route out of the private subnet to the NAT instance for this to work
+  - The amount of traffic that NAT instances can support depends on the instance size
+  - You can create HA using:
+    - Autoscaling Groups
+    - Multiple subnets in different AZs
+    - Script to automate failover
+  - Behind Security groups
+
+- NAT gateways
+  - Preferred by the enterprise
+  - Scale automatically up to 10Gbps
+  - No need to patch
+  - Not associated with security groups
+  - Automatically assigned a public ip address
+  - Remember to update route tables and point to NAT Gateways
+  - No need to disable source/destination checks
+  - More secure than a NAT instance
+
+- Network ACL's
+  - VPC automatically comes with default network ACL and by default allows all in/outbound traffic
+  - You can create custom network ACL's. By default each network ACL denies all in/outbound traffic
+  - each subnet in VPC must be associated with a network ACL, uses default ACL by default
+  - You can associate network ACL with multiple subnets, however subnet can only associate with one ACL at a time
+  - Adding subnet to a second ACL will automatically remove it from the previous ACL
+  - network ACL contains numbered list of rules that is evaluated in order, starting with lowest number
+  - network ACL always have separate inbound and outbound rules
+  - network ACL's are stateless
+  
