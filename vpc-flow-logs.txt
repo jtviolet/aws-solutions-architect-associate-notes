@@ -1,0 +1,8 @@
+Exam Tips
+- Cannot enable flow logs for VPC's that are peered with your VPC unless the peer VPC is in your account
+- you cannot tag a flow log
+- after flow log is created, you canot change its configuration
+- not all IP traffic is monitored
+- traffic from 169.254.169.254 not monitored
+- DHCP traffic not monitored
+- traffic to reserved IP address for VPC router is not monitored
