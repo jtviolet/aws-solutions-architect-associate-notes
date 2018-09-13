@@ -1,0 +1,17 @@
+Kinesis
+- Kinesis Stream
+- Kinesis Firehose
+- Kinesis Analytics
+
+Kinesis Streams
+- data stored for 24 hours by default
+- data stored in shards
+- data consumers (ec2 instances) turn shards into data to analyze
+- 5 transactions per second for reads, maximum total rate of 2 MB/second up to 1,000 records for writes
+
+Kinesis Firehose
+- Automated
+- no dealing with shards
+
+Kinesis Analytics
+- Way of analyzing data in Kinesis using SQL-like queries
