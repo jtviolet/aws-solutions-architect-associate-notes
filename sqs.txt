@@ -1,0 +1,24 @@
+SQS
+- distributed message queue system
+- pull-based system
+- decouple components so they run independently
+- messages are 256KB in size
+- kept 1 minute to 14 days, default 4 days
+- guarantees message will be processd at leat once
+- Visibility Timeout
+  - if job is not processed within timeout time, message becomes visible again
+  - if message is processed within that time, message is deleted
+  - maximum invisible time is 12 hours
+- Long Polling
+  - way to retrieve messages form Amazon SQS queue
+  - short polling returns immediately, long polling doesn't retun response until message arrives in message queue or poll times out
+  - long polling can save money
+
+Standard Queues
+- nearly-unlimited number of transactions per second
+- guarantee message is delivered at least once
+- more than one could be delivered out of order
+
+FIFO Queues
+- messages sent and received in order they arrive
+- delivered once and remains available until consumer processes and deletes it
