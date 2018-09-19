@@ -100,7 +100,7 @@ S3 Exam Tips
 - Eventual Consistency for overwrite PUTS and DELETES (take time to propogate)
 --- If you update object and then try to read you may get the old object
 - Writing to S3 returns HTTP200 for successful write
-- Loading files is faster when multipart upload is enabled
+- Loading files is faster when multipwart upload is enabled
 
 - Storage Tiers
 --- S3 Standard

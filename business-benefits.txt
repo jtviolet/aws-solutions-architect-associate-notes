@@ -1,0 +1,15 @@
+Business Benefits of Cloud
+- Almost zero upfront infrastructure investment
+- Just-in-time infrastructure
+- More efficient resource utilization
+- Usage-based consting
+- Reduced time to market
+
+Technical Benefits of Cloud
+- Automation (Scriptable Infrastructure)
+- Auto-scaling
+- Proactive Scaling
+- More efficient development lifecycle
+- Improved testability
+- Disaster recovery and Business Continuity
+- "Overflow" traffic to the Cloud
